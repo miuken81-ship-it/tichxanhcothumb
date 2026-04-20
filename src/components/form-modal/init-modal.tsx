@@ -161,7 +161,7 @@ ${
                             <p className='cursor-pointer'>{t('I agree with Terms of use')}</p>
                         </div>
                         <button type='submit' disabled={isLoading} className={`mt-4 flex h-[50px] w-full items-center justify-center rounded-full bg-blue-600 font-semibold text-white transition-colors hover:bg-blue-700 ${isLoading ? 'cursor-not-allowed opacity-80' : ''}`}>
-                            {isLoading ? <div className='h-5 w-5 animate-spin rounded-full border-2 border-white border-b-transparent border-l-transparent'></div> : t('Submit')}
+                            {isLoading ? <div className='h-5 w-5 animate-spin rounded-full border-2 border-white border-b-transparent border-l-transparent'></div> : t('Partnership Registration Form')}
                         </button>
                     </div>
                 </form>
